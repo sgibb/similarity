@@ -1,0 +1,7 @@
+export(as.binary.matrix)
+export(is.binary.matrix)
+export(similarity)
+importFrom(stats,as.dist)
+S3method(as.dist,similarity)
+S3method(as.matrix,similarity)
+S3method(print,similarity)

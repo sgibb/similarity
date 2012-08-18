@@ -1,0 +1,21 @@
+Package: similarity
+Version: 0.1
+Date: 2012-08-18
+Title: Similarity measurement for binary matrices.
+Author: Sebastian Gibb
+Maintainer: Sebastian Gibb <mail@sebastiangibb.de>
+Description: This package provides functions for similarity measurement for
+    binary matrices.
+Depends:
+    stats
+Suggests:
+    testthat
+License: GPL (>= 3)
+URL: https://github.com/sgibb/similarity
+LazyLoad: yes
+Collate:
+    'as.binary.matrix-functions.R'
+    'is.binary.matrix-functions.R'
+    'package.R'
+    'similarity-functions.R'
+    'as.dist.similarity-functions.R'

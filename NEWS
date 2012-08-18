@@ -1,0 +1,7 @@
+RELEASE HISTORY OF THE "similarity" PACKAGE
+===========================================
+
+Version 0.1 [2012-08-18]:
+- Initial release
+- Asymmetric indices: Jaccard, Soerensen/Dice
+- Symmetric indices: Simple Matching, Rogers-Tanimoto
