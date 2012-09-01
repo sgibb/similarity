@@ -1,6 +1,6 @@
 Package: similarity
-Version: 0.1
-Date: 2012-08-18
+Version: 0.2
+Date: 2012-09-01
 Title: Similarity measurement for binary matrices.
 Author: Sebastian Gibb
 Maintainer: Sebastian Gibb <mail@sebastiangibb.de>
@@ -19,3 +19,4 @@ Collate:
     'package.R'
     'similarity-functions.R'
     'as.dist.similarity-functions.R'
+    'dissimilarity-functions.R'

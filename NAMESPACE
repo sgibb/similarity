@@ -1,4 +1,5 @@
 export(as.binary.matrix)
+export(dissimilarity)
 export(is.binary.matrix)
 export(similarity)
 importFrom(stats,as.dist)
