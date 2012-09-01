@@ -6,8 +6,8 @@
     method = c("soerensen-dice", "soerensen", "dice", "jaccard", "simple", "simplematching", "rogers", "tanimoto", "rogers-tanimoto"))
 }
 \arguments{
-  \item{x}{a \code{\link{matrix}}. Please take care that
-  rows contain the samples and columns the features.}
+  \item{x}{a binary \code{\link{matrix}}. Please take care
+  that rows contain the samples and columns the features.}
 
   \item{method}{the similarity index to be used.}
 }

@@ -17,8 +17,8 @@
 #'
 #' This function calculates different similarity indices for a binary matrix.
 #'
-#' @param x a \code{\link{matrix}}. Please take care that rows contain the
-#'  samples and columns the features.
+#' @param x a binary \code{\link{matrix}}. Please take care that rows contain
+#'  the samples and columns the features.
 #' @param method the similarity index to be used.
 #'
 #' @details
