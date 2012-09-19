@@ -40,15 +40,10 @@
 #' as.dist(s)
 #'
 as.dist.similarity <- function(m, diag=FALSE, upper=FALSE) {
+  m <- as.matrix(m)
   ## turn similarity into a dissimilarity matrix
-  d <- 1-m
+  d <- sqrt(outer(X=diag(m), Y=diag(m), FUN="+") - 2 * m)
 
-  attr(d, "Diag") <- diag
-  attr(d, "Upper") <- upper 
-  attr(d, "diagonalValues") <- NULL
-
-  class(d) <- "dist"
- 
-  return(d)
+  return(as.dist(d, diag=diag, upper=upper))
 }
 
