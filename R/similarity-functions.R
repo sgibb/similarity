@@ -102,6 +102,17 @@ similarity <- function(x, method=c("soerensen-dice", "soerensen", "dice",
 
   stopifnot(is.binary.matrix(x))
 
+  ## test rows for zeros
+  .filterZeroRows <- function(x, s, method, diagValue) {
+    if (any(rowSums(x) == 0)) {
+      warning("'x' has rows containing only zeros. ",
+              "It doesn't make sense to use ", sQuote(method), ".",
+              call.=FALSE)
+      s[row(s) == col(s)] <- diagValue
+    }
+    return(s)
+  }
+
   rowNames <- row.names(x)
   nr <- nrow(x)
   nc <- ncol(x)
@@ -114,8 +125,14 @@ similarity <- function(x, method=c("soerensen-dice", "soerensen", "dice",
   s <- switch(method,
     dice=,
     soerensen=,
-    "soerensen-dice"={ 2*n11/(n01+n10+2*n11) },
-    jaccard={ n11/(n01+n10+n11) },
+    "soerensen-dice"={ 
+      s <- 2*n11/(n01+n10+2*n11)
+      .filterZeroRows(x, s, method=method, diagValue=1)
+    },
+    jaccard={ 
+      s <- n11/(n01+n10+n11)
+      .filterZeroRows(x, s, method=method, diagValue=1)
+    },
     simple=,
     simplematching={ (n00+n11)/(n00+n01+n10+n11) },
     rogers=,

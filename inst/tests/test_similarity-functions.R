@@ -13,6 +13,10 @@ test_that("general", {
   expect_error(similarity(list(c(1, 0), c(0, 1))))
   expect_error(similarity(b))
 
+  w <- a
+  w[2, 3] <- 0
+  expect_warning(similarity(w), "It doesn't make sense to use ")
+
   s <- similarity(a)
   expect_true(class(s) == "similarity")
   expect_true(attr(s, "Size") == nrow(a))
