@@ -125,8 +125,7 @@ similarity <- function(x, method=c("soerensen-dice", "soerensen", "dice",
   )
 
   ## store diagonale (only needed for as.matrix)
-  diag <- s[row(s) == col(s)]
-  diag[is.na(diag)] <- 0
+  diag <- diag(s)
 
   s <- s[lower.tri(s)]
 
