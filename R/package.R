@@ -20,8 +20,8 @@
 #'
 #' \tabular{ll}{
 #' Package: \tab similarity \cr
-#' Version: \tab 0.2\cr
-#' Date: \tab 2012-09-01\cr
+#' Version: \tab 0.3\cr
+#' Date: \tab 2012-09-19\cr
 #' License: \tab GPL (>= 3)\cr
 #' URL: \tab http://www.github.com/sgibb/similarity/ \cr
 #' }

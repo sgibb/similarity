@@ -1,6 +1,6 @@
 Package: similarity
-Version: 0.2
-Date: 2012-09-01
+Version: 0.3
+Date: 2012-09-19
 Title: Similarity measurement for binary matrices.
 Author: Sebastian Gibb
 Maintainer: Sebastian Gibb <mail@sebastiangibb.de>
