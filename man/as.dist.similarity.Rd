@@ -29,7 +29,7 @@
 \examples{
 library("similarity")
 
-a <- matrix(c(1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1),
+a <- matrix(c(1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1),
             ncol=3, nrow=4, byrow=TRUE)
 s <- similarity(a, "jaccard")
 as.dist(s)
