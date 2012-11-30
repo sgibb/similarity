@@ -37,10 +37,6 @@ as.binary.matrix <- function(x) {
     return(x)
   }
 
-  na <- is.na(x)
-  x[na] <- 0
-  x[!na] <- 1
-
-  return(x)
+  return(ifelse(is.na(x), 0, 1))
 }
 
