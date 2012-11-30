@@ -41,7 +41,7 @@
 
   Asymmetric indices: \tabular{lr}{ Soerensen/Dice
   (\code{soerensen-dice}) \tab \eqn{\frac{2n_{11}}{n_{01} +
-  n_{10} + n_{11}}} \cr
+  n_{10} + 2n_{11}}} \cr
 
   Jaccard (\code{jaccard}) \tab \eqn{\frac{n_{11}}{n_{01} +
   n_{10} + n_{11}}} \cr }

@@ -20,7 +20,7 @@
 #'
 #' @details
 #' To transform the similarity matrix into a distance matrix the following
-#' equation is used: \eqn{d = 1 - s}
+#' equation is used: \eqn{d = sqrt{s[i,i] + s[j,j] - 2s[i,j]}}
 #' 
 #' @method as.dist similarity
 #' @param m matrix

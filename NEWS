@@ -1,6 +1,9 @@
 RELEASE HISTORY OF THE "similarity" PACKAGE
 ===========================================
 
+Version 3.1 [2012-11-30]:
+- fix equations in documentation
+
 Version 0.3 [2012-09-19]:
 - Add warning if any row containing only zeros
 - Renew similarity to distance (dissimilarity) equation
